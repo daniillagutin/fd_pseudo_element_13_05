@@ -29,11 +29,12 @@ a{
 }
 .list-item{
   display: inline-block;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 17px;
+  padding-bottom: 17px;
 }
 .list-link{
   display: block;
+  position: relative;
   padding: 1em 2em;
   background-color: oldlace;
   transition: .5s;
@@ -41,9 +42,42 @@ a{
 .list-link:hover{
   background-color: orange;
 }
-/* .list-item + .list-item{
-  padding-left: 10px;
-} */
+.list-link::after{
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  width: 0;
+  height: 5px;
+  background-color: blue;
+  transition-property: width;
+  transition-duration: 700ms;
+  transition-timing-function: ease;
+  transition-delay: .4s;
+}
+.list-link:hover::after{
+  width: 100%;
+  
+}
+.list-link::before{
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: -7px;
+  width: 0;
+  height: 5px;
+  background-color: blue;
+  transition-property: width;
+  transition-duration: 700ms;
+  transition-timing-function: ease;
+  transition-delay: .4s;
+}
+.list-link:hover::before{
+  width: 100%;
+  
+}
 
 
 
