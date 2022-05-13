@@ -1,0 +1,24 @@
+h1{
+  width: 200px;
+  margin: auto;
+  position: relative;
+  text-align: center;
+}
+h1::before,
+h1::after{
+  content: url(./../icons/flower-tulip.svg);
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  /* background-color: aqua; */
+  color: white;
+}
+h1::before{
+  top: 0;
+  left: 0;
+}
+h1::after{
+  top: 0;
+  right: 0;
+}
