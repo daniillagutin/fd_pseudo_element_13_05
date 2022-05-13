@@ -1,5 +1,92 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  height: 300vh;
+  margin: 0;
+
+}
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a{
+  color: inherit;
+  text-decoration: none;
+}
+.page-header{
+  background-color: white;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  position: fixed;
+  box-shadow: 0 0 7px 1px lightgrey;
+}
+.list{
+  text-align: center;
+
+}
+.list-item{
+  display: inline-block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.list-link{
+  display: block;
+  padding: 1em 2em;
+  background-color: oldlace;
+  transition: .5s;
+}
+.list-link:hover{
+  background-color: orange;
+}
+/* .list-item + .list-item{
+  padding-left: 10px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main{
+  padding-top: 6em;
+}
+
+
+
+
 h1{
-  width: 200px;
+  width: 150px;
   margin: auto;
   position: relative;
   text-align: center;
@@ -8,8 +95,8 @@ h1::before,
 h1::after{
   content: url(./../icons/flower-tulip.svg);
   display: inline-block;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   position: absolute;
   /* background-color: aqua; */
   color: white;
